@@ -215,11 +215,12 @@
                     }
                 };
             
-                // Use raw.githubusercontent.com URL
-                xhr.open('GET', 'https://bunakchild.github.io/dcit26try/tree/main/static/descriptions/' + productFileName + '.txt', true);
+                // Use GitHub Pages URL without the 'tree' part
+                xhr.open('GET', 'https://bunakchild.github.io/dcit26try/static/descriptions/' + productFileName + '.txt', true);
                 xhr.send();
                 console.log('Fetching description for: ' + productFileName);
             }
+            
             
     
     
